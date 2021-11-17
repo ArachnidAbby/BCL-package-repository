@@ -1,5 +1,5 @@
 # NOTICE
-The BCL package repository is just a public repository of packages. We hold no responsibility for any of the damages these packages may or may not do. We just list and document packages. We cannot guarantee the safety of any individual package.
+The BCL package repository is just a public repository of packages. We hold no responsibility for any of the damages these packages may or may not cause. We just list and document packages. We cannot guarantee the safety of any individual package.
 
 # BCL-package-repository
 Just a testing ground for now. This will be the package repo for BCL
