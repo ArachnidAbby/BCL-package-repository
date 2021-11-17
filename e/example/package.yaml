@@ -1,3 +1,9 @@
+###############################################################
+#                                                             #
+#                    Example package YAML                     #
+#                                                             #
+###############################################################
+
 package-name: Example Package
 package-authors: https://github.com/spidertyler2005/BCL
   - BCL
