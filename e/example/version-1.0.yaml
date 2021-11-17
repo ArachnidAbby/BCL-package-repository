@@ -1,0 +1,10 @@
+###############################################################
+#                                                             #
+#                    Example Version YAML                     #
+#                                                             #
+###############################################################
+
+release-type: release #this can be release/alpha/beta/dev
+location: https://github.com/spidertyler2005/BCL
+installation-success: "Your have successfully installed the BCL example package"
+installation-start: "This is an example package | you might not want to install this?"
