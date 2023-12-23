@@ -1,0 +1,75 @@
+[Install]
+language_version = {min="0.7.0", max="69.42.0"}
+install_method = "git"
+install_url = "https://github.com/spidertyler2005/BCL-package-repository.git"
+
+# Where this should be cloned to
+install_folder = "exampleBCLPackage"
+# what folder actually contains the src files for the package
+package_src_dir = "/src/"
+
+
+# System/package requirements
+[Requirements]
+
+# required system packages
+[[Requirements.linux_packages]]
+name = "LLVM"
+allowed_versions = [
+    {ver="11", comp_args=["--libs=/lib64/llvm11/lib/libllvm.so"]},
+    {ver="14", comp_args=["--libs=/lib64/llvm14/lib/libllvm.so"]}
+]
+
+# [[linux_packages]]
+# name = "linux_package2"
+# allowed_versions = [
+#     {ver="11", comp_args=["--libs=/lib64/llvm11/lib/libllvm.so"]},
+#     {ver="14", comp_args=["--libs=/lib64/llvm14/lib/libllvm.so"]}
+# ]
+
+
+# Packages from the package manager
+[[Requirements.depend]]
+name = "example2"
+min_version="1.0.0"
+required_flags = ["VeryImportantFlag"]
+comp_args=[]
+
+# [[Requirements.depend]]
+# name = "depend2"
+# min_version="1.0.0"
+# required_flags = ["VeryImportantFlag"]
+# comp_args=[]
+
+
+# Soft dependencies
+[[Requirements.soft_depend]]
+name = "example3"
+min_version="1.0.0"
+required_flags = ["monty"]
+required_for_flags = ["FooFeature", "BarFeature"]
+comp_args=[]
+
+# [[Requirements.soft_depend]]
+# name = "softdep2"
+# min_version="1.0.0"
+# required_flags = ["monty"]
+# required_for_flags = ["FooFeature", "BarFeature"]
+# comp_args=[]
+
+
+# generic compiler flags, always enabled
+compiler_args = [
+    "--dev" # example
+]
+
+# Info about the package
+[Info]
+version = "1.0.0"
+license = "MIT"
+
+# flags enablable in the compiler
+declared_flags = [
+    "FooFeature",
+    "BarFeature"
+]

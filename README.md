@@ -13,3 +13,7 @@ use this template and then submit a pull request.
 # updating my package?
 
 just submit another pull request with the updated information!
+
+# Versioning
+
+You must use semantic versioning for the `min_version` and `max_version` strings to work!

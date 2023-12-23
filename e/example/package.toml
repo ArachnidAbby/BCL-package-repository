@@ -1,0 +1,14 @@
+# the default version to install
+latest_version = "1.0.0"
+
+# default info for every version. Can be overriden.
+[Info]
+docs_url = "https://example.com"
+source_url = "https://github.com/spidertyler2005/BCL"
+license = "GPLv3"
+languages = ["en-us"] # languages supported.
+tags = ["misc"] # declare tags that you think describe your package
+authors = [
+    "Spidertyler2005",
+    "John Package Manger"
+]
